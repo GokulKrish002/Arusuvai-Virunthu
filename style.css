@@ -97,6 +97,11 @@ body {
     width: 120px;
     border-radius: 8px;
 }
+.footer_logo{
+    height: 120px;
+    width: fit-content;
+    padding: 8px;
+}
 
 .btn-primary {
     transition: all ease .7s;
@@ -199,7 +204,7 @@ body {
 
 .reveal-fade {
     opacity: 0;
-    transition: 2s all ease;
+    transition: 3s all ease;
 }
 
 .reveal-l.active,
@@ -401,7 +406,7 @@ body {
 
 .paneer_masala {
     overflow: hidden;
-    width: 33vw;
+    width: 30vw;
     position: absolute;
     top: 0;
     right: -6%;
@@ -454,13 +459,49 @@ font-size: 14px;
 opacity: 75%;
 }
 
+.border-design, .border-design-upside-down{
+    background-size: contain;
+    transition: all ease 0.7s;
+    height: 25vh;
+    background-image: url('images/border_design_updated.png');
+    width: 100%;
+    background-repeat: repeat-x;    
+    background-position: bottom;
+    opacity: 0;
+}
+
+.border-design-upside-down{
+transform: rotate(180deg); 
+}
+
+.border-design.active, .border-design-upside-down.active{
+    width: 150%;
+    opacity: 1;
+}
+
+.tea_cup {
+    width: auto;
+    height: 80%;
+}
+.fa-brands {
+    padding: 4px;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 1200px) {
     .vh-100 {
         height: 100%;
     }
 
     .w-lg-50 {
-        width: 50% !important;
+        width: 100% !important;
     }
 
     .side_bar {
@@ -470,6 +511,9 @@ opacity: 75%;
 }
 
 @media screen and (max-width: 1200px) {
+    .vh-60 {
+        height: 100% !important;
+    }
 
     .vh-100 {
         height: 100%;
@@ -484,11 +528,22 @@ opacity: 75%;
     }
 
     .w-md-75 {
-        width: 75% !important;
+        width: 100% !important;
     }
 }
 
 @media screen and (max-width: 900px) {
+    .border-design, .border-design-upside-down{
+        height: 18vh;
+    }
+    .tea_cup {
+        width: auto;
+        height: 28vh;
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .paneer_masala {
         width: 43vw;
         top: 10%;
@@ -517,6 +572,14 @@ opacity: 75%;
 }
 
 @media screen and (max-width: 760px) {
+    .tea_cup {
+        width: auto;
+        height: 14vh;
+        width: auto;
+        position: absolute;
+        top: -6%;
+        right: 0;
+    }
     .paneer_masala {
         width: 33vw;
         top: -20%;
