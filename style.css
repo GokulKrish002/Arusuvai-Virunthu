@@ -94,7 +94,7 @@ body {
 .logo {
     transition: ease-in-out .5s;
     padding: 8px;
-    width: 120px;
+    width: 250px;
     border-radius: 8px;
 }
 .footer_logo{
